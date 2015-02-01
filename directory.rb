@@ -21,7 +21,7 @@ puts "The students of my cohort at Makers Academy:"
 puts "--------"
 end
 
-def print_students
+def print_students_list
   @students.each do |student|
     puts "#{student[:name]} (#{student[:cohort]} cohort)"
   end
@@ -34,7 +34,7 @@ end
 
 def show_students
 print_header
-      print_students
+      print_students_list
       print_footer
 end
 
