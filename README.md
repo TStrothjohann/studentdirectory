@@ -14,3 +14,9 @@ In this tutorial I'm building a student directory. It will have the following fe
 - Loading it from the file
 
 The script will be invoked from the command-line and it will only use pure Ruby, that is, there will be no external libraries to use.
+
+##How to use
+
+```shell
+ruby directory.rb 
+```
