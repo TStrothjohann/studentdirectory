@@ -11,3 +11,6 @@ puts "Ed Brown"
 puts "Erik Griffin"
 puts "Gabe Arafa"
 puts "Hannah Carney"
+print "Overall we have "
+print 9
+print " great students"
