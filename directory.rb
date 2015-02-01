@@ -1,16 +1,16 @@
 #Let's put all students into an array:
 students =[ 
-  "Alex Parkinson",
-  "Arfah Farooq",
-  "Carrie Christenson",
-  "Chris Ward",
-  "Cia Walsh",
-  "Costas Sarris",
-  "Diego Romero",
-  "Ed Brown",
-  "Erik Griffin",
-  "Gabe Arafa",
-  "Hannah Carney"
+  ["Alex Parkinson", :december],
+  ["Arfah Farooq", :december],
+  ["Carrie Christenson", :december],
+  ["Chris Ward", :december],
+  ["Cia Walsh", :december],
+  ["Costas Sarris", :december],
+  ["Diego Romero", :december],
+  ["Ed Brown", :december],
+  ["Erik Griffin", :november],
+  ["Gabe Arafa", :november],
+  ["Hannah Carney", :november] 
   ]
 
 def print_header
@@ -18,9 +18,9 @@ puts "The students of my cohort at Makers Academy:"
 puts "--------"
 end
 
-def print(names)
-  names.each do |name|
-    puts name
+def print(students)
+  students.each do |student|
+    puts "#{student[0]} (#{student[1]} cohort)"
   end
 end
 
