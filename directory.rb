@@ -44,17 +44,8 @@ puts "1. input a student"
     puts "9. Exit"
 end
 
-
-#Interactive menu
-
-def interactive_menu
-  loop do
-  # 1. Show the menu and ask the user what to do
-    print_menu
-  # 2. get the user input and save it to an variable
-    userchoice = gets.chomp
-  # 3. Do what the user wants to do
-    case userchoice
+def process(userchoice)
+  case userchoice
     when "1"
       @students = input_students
       when "2"
@@ -64,6 +55,16 @@ def interactive_menu
     else
       puts "I don't know what you meant. Please try again."
     end
+end
+
+#Interactive menu
+
+def interactive_menu
+  loop do
+  # 1. Show the menu and ask the user what to do
+    print_menu   
+  # 3. get the user input and Do what the user wants to do
+    process(gets.chomp)
   end
 end
 
