@@ -84,8 +84,20 @@ def save_students
   puts "saved to students.csv"
 end
 
+def load_students
+  file=File.open("students.csv", "r")
+  file.readlines.each do |line|
+    name, cohort = line.chomp.split(",")
+    @students << {:name => name, :cohort => cohort.to_sym}
+  end
+  file.close
+end
+  
+
+
 
 #nothing happens until we call the method:
+load_students
 interactive_menu
 
 
